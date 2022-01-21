@@ -24,42 +24,99 @@
 # Max_num(20, 8)
 
 # 3. По заданному номеру дня недели вывести его название
+# def What_day(n):
+#     if n == 1:
+#         print('Пн')
+#     elif n == 2:
+#         print('Вт')
+#     elif n == 3:
+#         print('Ср')
+#     elif n == 4:
+#         print('Чт')
+#     elif n == 5:
+#         print('Пт')
+#     elif n == 6:
+#         print('Сб')
+#     else:
+#         print('Вс')
+# What_day(2)
 
-def What_day(n):
-    if n == 1:
-        print('Пн')
-    elif n == 2:
-        print('Вт')
-    elif n == 3:
-        print('Ср')
-    elif n == 4:
-        print('Чт')
-    elif n == 5:
-        print('Пт')
-    elif n == 6:
-        print('Сб')
-    else:
-        print('Вс')
-What_day(5)
+# 4. Найти максимальное из трех чисел
+# def Max(a, b, c):
+#     max = a
+#     if b > max:
+#         max = b
+#     if c > max:
+#         max = c
+#     print(max)
+# Max(1, 30, 7)
 
+# 5. Написать программу вычисления значения функции y = sin(x)/x
+# from math import *
+# def y(x):
+#     return sin(x)/x
+# print(y(28))
+
+# 6. Выяснить является ли число чётным
+# def Is_even(n):
+#     print(n % 2 == 0)
+# Is_even(27)
+
+# 7. Показать числа от -N до N
 # print('Введите N')
 # N = int(input())
 # for i in range(-N, N+1):
 #     print(i)
 
-# 6. Выяснить является ли число чётным
-# n = 26
-# print(n % 2 == 0)
+# 8. Показать четные числа от 1 до N
+# def Even_num(N):
+#     if N > 0:
+#         for i in range(1, N + 1):
+#             if i % 2 == 0:
+#                 print(i)
+#     else:
+#         for i in range(N, 2):
+#             if i % 2 == 0:
+#                 print(i)
+# Even_num(10)
+
+# 9. Показать последнюю цифру трёхзначного числа
+# def Last_digit(n):
+#     print(n % 10)
+# Last_digit(249)
+
+# 10. Показать вторую цифру трёхзначного числа
+# def Second_digit(n):
+#     print((n // 10) % 10)
+# Second_digit(200)
 
 # 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+# def Max_digit(n):
+#     max = n % 10
+#     if n // 10 > max:
+#         max = n // 10
+#     print('Наибольшая цифра числа', n, ':', max)
+# Max_digit(87)
 
-# import random
+# 12. Удалить вторую цифру трёхзначного числа
+# def Delete_second_digit(n):
+#     last = str(n % 10)
+#     first = str(n // 100)
+#     print(first + last)
+# Delete_second_digit(437)
 
-# Написать программу вычисления значения функции y = sin(x)/x
-# from math import *
-# def y(x):
-#     return sin(x)/x
-# print(y(28))
+# 13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
+# def Multiple(a, b):
+#     print(a % b == 0)
+# Multiple(12, 4)
+
+# 14. Найти третью цифру числа или сообщить, что её нет
+# def Third_digit(n):
+#     if n // 100 == 0:
+#         print('В данном числе нет третьей цифры')
+#     else:
+#         print((n // 100) % 10)
+# Third_digit(567489)
 
 # 22. Найти расстояние между точками в пространстве 2D/3D
 # x1 = 5
